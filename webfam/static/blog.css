@@ -1,0 +1,132 @@
+body {
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967 );
+}
+
+/* nav */
+
+ul {
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    background-color: #02143D;
+    height: 75px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo {
+    margin-top: -5px;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-right: 50px;  
+}
+
+li a:hover {
+    color:#edc967;
+    font-weight: bold;
+}
+
+#active {
+    color:rgb(155, 166, 175);
+    
+}
+
+/*typed text*/
+
+.type-container {
+    display: inline-block;
+    font-size: 3rem;
+    padding-left: 50px;
+    padding-bottom: -10px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: Luminari, fantasy;
+    font-stretch: expanded;
+}
+
+.typed {
+    color:#02143D;
+    overflow: hidden;
+    border-right: .30em solid transparent;
+    border-radius: 4px;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards, blinking 1.2s infinite;
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 100%}
+}
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: #02143d };
+}
+
+/*blog posts*/
+.container {
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}
+
+.post-frame {
+    background-color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, .02), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: auto;
+    max-width: 850px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.pimage {
+    padding:0;
+    margin: 0;
+    border-style: solid;
+    border-width: 0px 70px 0px 70px;
+    border-color: black;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 386px;
+}
+
+.title {
+    font-family: Luminari, fantasy;
+    padding-top: 5px;
+}
+
+.post {
+    display:flex;
+    text-align: start;
+    text-justify: distribute-all-lines;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top:10px;
+    font-family: Didot, serif;
+}
+
+.date {
+    font-family: Didot, serif;
+    font-weight: lighter;
+}

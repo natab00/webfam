@@ -1,0 +1,111 @@
+body {
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967 );
+}
+
+/* nav */
+
+ul {
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0;
+    background-color: #02143D;
+    height: 75px;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo {
+    margin-top: -5px;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-right: 50px;  
+}
+
+li a:hover {
+    color:#edc967;
+    font-weight: bold;
+}
+
+#active {
+    color:rgb(155, 166, 175);
+    
+}
+
+/*typed text*/
+
+.type-container {
+    display: inline-block;
+    font-size: 3rem;
+    padding-left: 50px;
+    padding-bottom: -10px;
+    padding-top: 15px;
+    text-align: center;
+    font-family: Luminari, fantasy;
+    font-stretch: expanded;
+}
+
+.typed {
+    color:#02143D;
+    overflow: hidden;
+    border-right: .30em solid transparent;
+    border-radius: 4px;
+    white-space: nowrap;
+    animation: typing 1s steps(20, end) forwards, blinking 1.2s infinite;
+}
+@keyframes typing {
+    from { width: 0}
+    to { width: 100%}
+}
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: #02143d };
+}
+
+.container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../static/Images/jestermask.jpg");
+    background-size:cover;
+    width: 600px;
+    height:400px;
+    margin-left: 40px; 
+}
+
+div.joke .button {
+    margin-left: 10px;
+    margin-right: 10px;
+    width:200px;
+    height:100px;
+    font-size: xx-large;
+    font-family: Luminari, fantasy;
+    color: white;
+    background-color: #02143D;
+    opacity: .85;
+    border: black;
+    border-style:outset;
+}
